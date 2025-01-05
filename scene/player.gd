@@ -1,16 +1,18 @@
 extends CharacterBody3D
 
-@onready var camera: Camera3D = $mesh/camera
+@onready var camera: Camera3D = $camera
 @onready var player: CharacterBody3D = $"."
+@onready var wand: MeshInstance3D = $wand
 
 @onready var mouse_speed_le: LineEdit = $"Control/VBoxContainer/HBoxContainer/mouse speed"
 @onready var mouse_speed_sl: HSlider = $"Control/VBoxContainer/HBoxContainer2/mouse speed"
+@onready var camera_rotate_x: LineEdit = $"Control/VBoxContainer/HBoxContainer3/camera rotate x"
 
 
 # globals for mouse control
 var mouse_sensitivity = 0.004
-var upDownMinAngle = -90.0
-var upDownMaxAngle = 90.0
+var upDownMinAngle = -1.1
+var upDownMaxAngle = 1.57
 
 var mouse_active = false # handled by right mouse button
 
@@ -62,10 +64,16 @@ func _input(event: InputEvent) -> void:
 	if mouse_active and event is InputEventMouseMotion:
 		# Rotate camera up and down
 		camera.rotation.x -= event.relative.y * mouse_sensitivity
-		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(upDownMinAngle), deg_to_rad(upDownMaxAngle))
+		camera.rotation.x = clamp(camera.rotation.x, upDownMinAngle, upDownMaxAngle)
+		
+		# copy to lights rotation
+		wand.rotation.x = camera.rotation.x - deg_to_rad(90)
 
 		# Rotate player left and right
 		rotation.y -= event.relative.x * mouse_sensitivity
+		
+		# copy y rotate to the input text box
+		camera_rotate_x.text = str(camera.rotation.x)
 	
 	if mouse_active: # ! FIX to only be set once
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)

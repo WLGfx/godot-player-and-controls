@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bb4ohlgti4gwd"]
+[gd_scene load_steps=12 format=3 uid="uid://bb4ohlgti4gwd"]
 
 [ext_resource type="Script" path="res://scene/player.gd" id="1_vdvge"]
 
@@ -12,6 +12,17 @@ size = Vector2(50, 50)
 [sub_resource type="BoxShape3D" id="BoxShape3D_4aqb7"]
 size = Vector3(49, 0.5, 49)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhhkd"]
+disable_receive_shadows = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_12foe"]
+material = SubResource("StandardMaterial3D_xhhkd")
+top_radius = 0.01
+bottom_radius = 0.02
+height = 0.2
+radial_segments = 8
+cap_bottom = false
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2r26q"]
 radius = 0.2
 height = 1.6
@@ -20,15 +31,11 @@ height = 1.6
 radius = 0.2
 height = 1.6
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhhkd"]
-disable_receive_shadows = true
+[sub_resource type="BoxMesh" id="BoxMesh_kgif6"]
+size = Vector3(10, 1, 1)
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_12foe"]
-material = SubResource("StandardMaterial3D_xhhkd")
-top_radius = 0.02
-bottom_radius = 0.02
-height = 0.3
-radial_segments = 12
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_2wqty"]
+data = PackedVector3Array(-5, 0.5, 0.5, 5, 0.5, 0.5, -5, -0.5, 0.5, 5, 0.5, 0.5, 5, -0.5, 0.5, -5, -0.5, 0.5, 5, 0.5, -0.5, -5, 0.5, -0.5, 5, -0.5, -0.5, -5, 0.5, -0.5, -5, -0.5, -0.5, 5, -0.5, -0.5, 5, 0.5, 0.5, 5, 0.5, -0.5, 5, -0.5, 0.5, 5, 0.5, -0.5, 5, -0.5, -0.5, 5, -0.5, 0.5, -5, 0.5, -0.5, -5, 0.5, 0.5, -5, -0.5, -0.5, -5, 0.5, 0.5, -5, -0.5, 0.5, -5, -0.5, -0.5, 5, 0.5, 0.5, -5, 0.5, 0.5, 5, 0.5, -0.5, -5, 0.5, 0.5, -5, 0.5, -0.5, 5, 0.5, -0.5, -5, -0.5, 0.5, 5, -0.5, 0.5, -5, -0.5, -0.5, 5, -0.5, 0.5, 5, -0.5, -0.5, -5, -0.5, -0.5)
 
 [node name="playground" type="Node3D"]
 
@@ -54,25 +61,29 @@ shape = SubResource("BoxShape3D_4aqb7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2)
 script = ExtResource("1_vdvge")
 
+[node name="wand" type="MeshInstance3D" parent="player"]
+transform = Transform3D(0.993805, -0.111139, -4.85805e-09, 0, -4.37113e-08, 0.999999, -0.111139, -0.993804, -4.34405e-08, 0.0658448, 0.537448, -0.191114)
+mesh = SubResource("CylinderMesh_12foe")
+skeleton = NodePath("light")
+
+[node name="light" type="OmniLight3D" parent="player/wand"]
+transform = Transform3D(1, 7.0082e-09, 8.94624e-08, 8.9407e-08, -0.163171, -0.986599, 7.68341e-09, 0.986599, -0.163171, 6.29425e-05, 0.112153, 6.73532e-05)
+light_size = 0.03
+light_specular = 1.0
+shadow_enabled = true
+shadow_bias = 0.001
+shadow_blur = 2.749
+omni_range = 20.0
+
+[node name="camera" type="Camera3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00061667, 0.71411, -0.204734)
+
 [node name="shape" type="CollisionShape3D" parent="player"]
 shape = SubResource("CapsuleShape3D_2r26q")
 
 [node name="mesh" type="MeshInstance3D" parent="player"]
 mesh = SubResource("CapsuleMesh_j3jml")
 skeleton = NodePath("../..")
-
-[node name="camera" type="Camera3D" parent="player/mesh"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-
-[node name="light" type="OmniLight3D" parent="player/mesh/camera"]
-transform = Transform3D(0.997165, -0.0146502, 0.0737997, 0.00922416, 0.997265, 0.0733353, -0.0746722, -0.0724467, 0.994573, 0.176222, -0.0573279, -0.385842)
-light_size = 0.08
-shadow_enabled = true
-omni_range = 20.0
-
-[node name="wand" type="MeshInstance3D" parent="player/mesh/camera/light"]
-transform = Transform3D(1, -7.45058e-09, -1.11759e-08, 3.72529e-09, -0.163171, 0.986598, 1.49012e-08, -0.986598, -0.163171, 1.49012e-08, 0.0331647, 0.182554)
-mesh = SubResource("CylinderMesh_12foe")
 
 [node name="Control" type="Control" parent="player"]
 layout_mode = 3
@@ -131,6 +142,61 @@ text = "Mouse speed"
 layout_mode = 2
 text = "0.004"
 alignment = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="player/Control/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="player/Control/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "camera.rotate.x"
+
+[node name="camera rotate x" type="LineEdit" parent="player/Control/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "0.004"
+alignment = 2
+editable = false
+
+[node name="steps" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="floor piece" type="StaticBody3D" parent="steps"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="steps/floor piece"]
+mesh = SubResource("BoxMesh_kgif6")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="steps/floor piece"]
+shape = SubResource("ConcavePolygonShape3D_2wqty")
+
+[node name="floor piece2" type="StaticBody3D" parent="steps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="steps/floor piece2"]
+mesh = SubResource("BoxMesh_kgif6")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="steps/floor piece2"]
+shape = SubResource("ConcavePolygonShape3D_2wqty")
+
+[node name="floor piece3" type="StaticBody3D" parent="steps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -2)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="steps/floor piece3"]
+mesh = SubResource("BoxMesh_kgif6")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="steps/floor piece3"]
+shape = SubResource("ConcavePolygonShape3D_2wqty")
+
+[node name="floor piece4" type="StaticBody3D" parent="steps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -3)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="steps/floor piece4"]
+mesh = SubResource("BoxMesh_kgif6")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="steps/floor piece4"]
+shape = SubResource("ConcavePolygonShape3D_2wqty")
 
 [connection signal="pressed" from="player/Control/VBoxContainer/HBoxContainer2/mouse speed down" to="player" method="_on_mouse_speed_down_pressed"]
 [connection signal="value_changed" from="player/Control/VBoxContainer/HBoxContainer2/mouse speed" to="player" method="_on_mouse_speed_value_changed"]

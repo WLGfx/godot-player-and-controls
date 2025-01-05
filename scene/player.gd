@@ -19,6 +19,9 @@ var strafe_multiplier = 0.5 # increased on boost
 var move_speed = 2 			# units per second
 var move_multiplier = 0.5 	# increased on boost
 
+var gravity = 9.8			# units per second per second
+var jump_force = 5			# units per second
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	mouse_speed_le.text = str(mouse_sensitivity)
@@ -45,7 +48,12 @@ func _physics_process(_delta: float) -> void:
 
 	velocity.x = direction.x * move_speed * strafe_multiplier
 	velocity.z = direction.z * move_speed * move_multiplier
-	#velocity.y = 0
+
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		velocity.y = jump_force
+	
+	if not is_on_floor():
+		velocity.y -= gravity * _delta
 	
 	move_and_slide()
 

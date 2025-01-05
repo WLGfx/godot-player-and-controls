@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bb4ohlgti4gwd"]
+[gd_scene load_steps=10 format=3 uid="uid://bb4ohlgti4gwd"]
 
 [ext_resource type="Script" path="res://scene/player.gd" id="1_vdvge"]
 
@@ -19,6 +19,16 @@ height = 1.6
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_j3jml"]
 radius = 0.2
 height = 1.6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhhkd"]
+disable_receive_shadows = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_12foe"]
+material = SubResource("StandardMaterial3D_xhhkd")
+top_radius = 0.02
+bottom_radius = 0.02
+height = 0.3
+radial_segments = 12
 
 [node name="playground" type="Node3D"]
 
@@ -52,12 +62,17 @@ mesh = SubResource("CapsuleMesh_j3jml")
 skeleton = NodePath("../..")
 
 [node name="camera" type="Camera3D" parent="player/mesh"]
-transform = Transform3D(1, 0, 0, 0, 0.974496, 0.224407, 0, -0.224407, 0.974496, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
-[node name="spot" type="SpotLight3D" parent="player/mesh/camera"]
-transform = Transform3D(1, 0, 0, -1.86265e-09, 1, 0, 7.45058e-09, -1.49012e-08, 1, 0.0830619, -0.00196815, 0.00972795)
-light_specular = 3.0
+[node name="light" type="OmniLight3D" parent="player/mesh/camera"]
+transform = Transform3D(0.997165, -0.0146502, 0.0737997, 0.00922416, 0.997265, 0.0733353, -0.0746722, -0.0724467, 0.994573, 0.176222, -0.0573279, -0.385842)
+light_size = 0.08
 shadow_enabled = true
+omni_range = 20.0
+
+[node name="wand" type="MeshInstance3D" parent="player/mesh/camera/light"]
+transform = Transform3D(1, -7.45058e-09, -1.11759e-08, 3.72529e-09, -0.163171, 0.986598, 1.49012e-08, -0.986598, -0.163171, 1.49012e-08, 0.0331647, 0.182554)
+mesh = SubResource("CylinderMesh_12foe")
 
 [node name="Control" type="Control" parent="player"]
 layout_mode = 3

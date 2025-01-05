@@ -45,7 +45,7 @@ func _physics_process(_delta: float) -> void:
 
 	velocity.x = direction.x * move_speed * strafe_multiplier
 	velocity.z = direction.z * move_speed * move_multiplier
-	velocity.y = 0
+	#velocity.y = 0
 	
 	move_and_slide()
 
@@ -58,6 +58,11 @@ func _input(event: InputEvent) -> void:
 
 		# Rotate player left and right
 		rotation.y -= event.relative.x * mouse_sensitivity
+	
+	if mouse_active: # ! FIX to only be set once
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	else:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 
 func _on_mouse_speed_value_changed(value: float) -> void:

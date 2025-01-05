@@ -1,0 +1,107 @@
+[gd_scene load_steps=8 format=3 uid="uid://bb4ohlgti4gwd"]
+
+[ext_resource type="Script" path="res://scene/player.gd" id="1_vdvge"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2ipyv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_drywg"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_byf06"]
+size = Vector2(50, 50)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4aqb7"]
+size = Vector3(49, 0.5, 49)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2r26q"]
+radius = 0.2
+height = 1.6
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_j3jml"]
+radius = 0.2
+height = 1.6
+
+[node name="playground" type="Node3D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2, 2)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -87.0
+offset_top = -51.0
+offset_right = 87.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="mouse speed" type="HSlider" parent="Control/VBoxContainer"]
+layout_mode = 2
+min_value = 0.001
+max_value = 0.2
+step = 0.001
+value = 0.01
+tick_count = 1
+ticks_on_borders = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Mouse speed"
+
+[node name="mouse speed" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "0.001"
+alignment = 2
+
+[node name="box" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_2ipyv")
+
+[node name="collision" type="StaticBody3D" parent="box"]
+
+[node name="shape" type="CollisionShape3D" parent="box/collision"]
+shape = SubResource("BoxShape3D_drywg")
+
+[node name="floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_byf06")
+
+[node name="collision" type="StaticBody3D" parent="floor"]
+
+[node name="shape" type="CollisionShape3D" parent="floor/collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.251465, 0)
+shape = SubResource("BoxShape3D_4aqb7")
+
+[node name="player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2)
+script = ExtResource("1_vdvge")
+
+[node name="shape" type="CollisionShape3D" parent="player"]
+shape = SubResource("CapsuleShape3D_2r26q")
+
+[node name="mesh" type="MeshInstance3D" parent="player"]
+mesh = SubResource("CapsuleMesh_j3jml")
+skeleton = NodePath("../..")
+
+[node name="camera" type="Camera3D" parent="player/mesh"]
+transform = Transform3D(1, 0, 0, 0, 0.974496, 0.224407, 0, -0.224407, 0.974496, 0, 1, 0)
+
+[node name="spot" type="SpotLight3D" parent="player/mesh/camera"]
+transform = Transform3D(1, 0, 0, -1.86265e-09, 1, 0, 7.45058e-09, -1.49012e-08, 1, 0.0830619, -0.00196815, 0.00972795)
+light_specular = 3.0
+shadow_enabled = true
+
+[connection signal="value_changed" from="Control/VBoxContainer/mouse speed" to="player" method="_on_mouse_speed_value_changed"]

@@ -1,2 +1,3 @@
 # godot-player-and-controls
-# see master branch
+(somehow I got it working again, both git and movement)
+

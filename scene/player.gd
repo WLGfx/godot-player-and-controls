@@ -36,6 +36,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
+	# engine running?
+	if Engine.is_editor_hint():
+		return
+	
 	mouse_active = Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT)
 	
 	if Input.is_action_pressed("move boost"):
@@ -48,7 +52,10 @@ func _process(_delta: float) -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	
+	# if the editor is running just exit
+	if Engine.is_editor_hint():
+		return
+
 	var move_x : float = float(Input.get_action_strength("right")) - float(Input.get_action_strength("left"))
 	var move_z : float = float(Input.get_action_strength("backward")) - float(Input.get_action_strength("forward"))
 

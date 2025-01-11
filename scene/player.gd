@@ -1,32 +1,37 @@
+@tool
 extends CharacterBody3D
 
 @onready var camera: Camera3D = $camera
 @onready var player: CharacterBody3D = $"."
 @onready var wand: MeshInstance3D = $wand
 
-@onready var mouse_speed_le: LineEdit = $"Control/VBoxContainer/HBoxContainer/mouse speed"
-@onready var mouse_speed_sl: HSlider = $"Control/VBoxContainer/HBoxContainer2/mouse speed"
-@onready var camera_rotate_x: LineEdit = $"Control/VBoxContainer/HBoxContainer3/camera rotate x"
+@onready var mouse_speed_sl: HSlider = $"Control/player ui/ui controls/slider/mouse speed_sl"
+@onready var mouse_speed_le: LineEdit = $"Control/player ui/ui controls/mouse sensitivity/mouse speed_le"
+@onready var camera_rotate_x: LineEdit = $"Control/player ui/ui controls/camera x/camera rotate x"
 
+@onready var player_ui: VBoxContainer = $"Control/player ui"
+@onready var mouse_controls: Button = $"Control/player ui/mouse controls"
+@onready var ui_controls: VBoxContainer = $"Control/player ui/ui controls"
 
 # globals for mouse control
-var mouse_sensitivity = 0.004
-var upDownMinAngle = -1.1
-var upDownMaxAngle = 1.57
+@export var mouse_sensitivity = 0.004
+@export var upDownMinAngle = -1.1
+@export var upDownMaxAngle = 1.57
 
-var mouse_active = false # handled by right mouse button
+@export var mouse_active = false # handled by right mouse button
 
-var strafe_speed = 2 		# units per second
-var strafe_multiplier = 0.5 # increased on boost
-var move_speed = 2 			# units per second
-var move_multiplier = 0.5 	# increased on boost
+@export var strafe_speed = 2 		# units per second
+@export var strafe_multiplier = 0.5 # increased on boost
+@export var move_speed = 2 			# units per second
+@export var move_multiplier = 0.5 	# increased on boost
 
-var gravity = 9.8			# units per second per second
-var jump_force = 5			# units per second
+@export var gravity = 9.8			# units per second per second
+@export var jump_force = 5			# units per second
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	mouse_speed_le.text = str(mouse_sensitivity)
+	ui_controls.visible = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -43,6 +48,7 @@ func _process(_delta: float) -> void:
 
 
 func _physics_process(_delta: float) -> void:
+	
 	var move_x : float = float(Input.get_action_strength("right")) - float(Input.get_action_strength("left"))
 	var move_z : float = float(Input.get_action_strength("backward")) - float(Input.get_action_strength("forward"))
 
@@ -94,3 +100,7 @@ func _on_mouse_speed_down_pressed() -> void:
 func _on_mouse_speed_up_pressed() -> void:
 	if mouse_speed_sl.value < mouse_speed_sl.max_value:
 		mouse_speed_sl.value += mouse_speed_sl.step
+
+
+func _on_mouse_controls_pressed() -> void:
+	ui_controls.visible = not ui_controls.visible

@@ -2,16 +2,16 @@
 extends CharacterBody3D
 
 @onready var camera: Camera3D = $camera
-@onready var player: CharacterBody3D = $"."
-@onready var wand: MeshInstance3D = $wand
+#@onready var player: CharacterBody3D = $"."
+@onready var wand:= $light
 
-@onready var mouse_speed_sl: HSlider = $"Control/player ui/ui controls/slider/mouse speed_sl"
-@onready var mouse_speed_le: LineEdit = $"Control/player ui/ui controls/mouse sensitivity/mouse speed_le"
-@onready var camera_rotate_x: LineEdit = $"Control/player ui/ui controls/camera x/camera rotate x"
+#@onready var mouse_speed_sl: HSlider = $"Control/player ui/ui controls/slider/mouse speed_sl"
+#@onready var mouse_speed_le: LineEdit = $"Control/player ui/ui controls/mouse sensitivity/mouse speed_le"
+#@onready var camera_rotate_x: LineEdit = $"Control/player ui/ui controls/camera x/camera rotate x"
 
-@onready var player_ui: VBoxContainer = $"Control/player ui"
-@onready var mouse_controls: Button = $"Control/player ui/mouse controls"
-@onready var ui_controls: VBoxContainer = $"Control/player ui/ui controls"
+#@onready var player_ui: VBoxContainer = $"Control/player ui"
+#@onready var mouse_controls: Button = $"Control/player ui/mouse controls"
+#@onready var ui_controls: VBoxContainer = $"Control/player ui/ui controls"
 
 # globals for mouse control
 @export var mouse_sensitivity = 0.004
@@ -30,8 +30,9 @@ extends CharacterBody3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	mouse_speed_le.text = str(mouse_sensitivity)
-	ui_controls.visible = false
+	#mouse_speed_le.text = str(mouse_sensitivity)
+	#ui_controls.visible = false
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -80,34 +81,15 @@ func _input(event: InputEvent) -> void:
 		camera.rotation.x = clamp(camera.rotation.x, upDownMinAngle, upDownMaxAngle)
 		
 		# copy to lights rotation
-		wand.rotation.x = camera.rotation.x - deg_to_rad(90)
+		wand.rotation.x = camera.rotation.x# - deg_to_rad(90)
 
 		# Rotate player left and right
 		rotation.y -= event.relative.x * mouse_sensitivity
 		
 		# copy y rotate to the input text box
-		camera_rotate_x.text = str(camera.rotation.x)
+		#camera_rotate_x.text = str(camera.rotation.x)
 	
 	if mouse_active: # ! FIX to only be set once
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	else:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-
-
-func _on_mouse_speed_value_changed(value: float) -> void:
-	mouse_speed_le.text = str(value)
-	mouse_sensitivity = value
-
-
-func _on_mouse_speed_down_pressed() -> void:
-	if mouse_speed_sl.value > mouse_speed_sl.min_value:
-		mouse_speed_sl.value -= mouse_speed_sl.step
-
-
-func _on_mouse_speed_up_pressed() -> void:
-	if mouse_speed_sl.value < mouse_speed_sl.max_value:
-		mouse_speed_sl.value += mouse_speed_sl.step
-
-
-func _on_mouse_controls_pressed() -> void:
-	ui_controls.visible = not ui_controls.visible

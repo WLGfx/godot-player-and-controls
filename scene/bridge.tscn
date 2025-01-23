@@ -1,0 +1,167 @@
+[gd_scene load_steps=20 format=3 uid="uid://bff443gxt0oo0"]
+
+[ext_resource type="Script" path="res://scene/bridge.gd" id="1_4kteh"]
+[ext_resource type="ArrayMesh" uid="uid://borgyac8k5ki6" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Floor_01.res" id="1_dmcya"]
+[ext_resource type="ArrayMesh" uid="uid://cy7ufdwqllppv" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Walls_01.res" id="2_f23k4"]
+[ext_resource type="ArrayMesh" uid="uid://bteihs8i3xe5x" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Platform_01.res" id="3_fb2wv"]
+[ext_resource type="ArrayMesh" uid="uid://bjo8v0ags0cfk" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Console_02.res" id="4_pxfgb"]
+[ext_resource type="ArrayMesh" uid="uid://c22kavtuv4h6h" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Console_01.res" id="5_hy064"]
+[ext_resource type="ArrayMesh" uid="uid://bilwb4yddscbr" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Wall_Details_01.res" id="6_87x5m"]
+[ext_resource type="ArrayMesh" uid="uid://bnp6jc06rcq4n" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Rear_Wall_01.res" id="7_7bq17"]
+[ext_resource type="ArrayMesh" uid="uid://b4wpfjq8f1bdf" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Ceiling_01.res" id="8_twwdx"]
+[ext_resource type="ArrayMesh" uid="uid://falfyijf0k8p" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_01.res" id="9_7s175"]
+[ext_resource type="ArrayMesh" uid="uid://drg7c1ry6ucq1" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_03.res" id="10_x0yk3"]
+[ext_resource type="ArrayMesh" uid="uid://dg3vqi1wqxv5h" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Corridor_Single_Arch_01.res" id="11_sehmg"]
+[ext_resource type="ArrayMesh" uid="uid://cl6iq417k3ogd" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_01_Alt.res" id="12_6en2a"]
+[ext_resource type="ArrayMesh" uid="uid://cxctmf8pqmcks" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Doorframe_02.res" id="13_wcb7m"]
+[ext_resource type="ArrayMesh" uid="uid://cmidvsum8f6c5" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Lift_01.res" id="14_4lid8"]
+[ext_resource type="ArrayMesh" uid="uid://cdplpq8u016fv" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_07.res" id="15_odqoe"]
+[ext_resource type="ArrayMesh" uid="uid://cc5781tht651e" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Roof_Exterior_01.res" id="16_dylq1"]
+[ext_resource type="ArrayMesh" uid="uid://mta5t5qvsl8w" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_01.res" id="17_xmiko"]
+[ext_resource type="ArrayMesh" uid="uid://fvh7olnhr51m" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_05.res" id="18_gn4bn"]
+
+[node name="Bridge" type="Node3D"]
+script = ExtResource("1_4kteh")
+
+[node name="Syntyscifi2SmBldBridgeFloor01" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_dmcya")
+
+[node name="Syntyscifi2SmBldBridgeWalls01" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_f23k4")
+
+[node name="Syntyscifi2SmBldBridgePlatform01" type="MeshInstance3D" parent="."]
+mesh = ExtResource("3_fb2wv")
+
+[node name="Syntyscifi2SmBldBridgeConsole02" type="MeshInstance3D" parent="."]
+mesh = ExtResource("4_pxfgb")
+
+[node name="Syntyscifi2SmBldBridgeConsole01" type="MeshInstance3D" parent="."]
+mesh = ExtResource("5_hy064")
+
+[node name="Syntyscifi2SmBldBridgeWallDetails01" type="MeshInstance3D" parent="."]
+mesh = ExtResource("6_87x5m")
+
+[node name="Syntyscifi2SmBldBridgeRearWall01" type="MeshInstance3D" parent="."]
+mesh = ExtResource("7_7bq17")
+
+[node name="Syntyscifi2SmBldFloor01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -5)
+mesh = ExtResource("9_7s175")
+
+[node name="Syntyscifi2SmBldFloor02" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+mesh = ExtResource("9_7s175")
+
+[node name="Syntyscifi2SmBldFloor03" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, -5)
+mesh = ExtResource("9_7s175")
+
+[node name="Syntyscifi2SmBldFloor04" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+mesh = ExtResource("10_x0yk3")
+
+[node name="Syntyscifi2SmBldFloor05" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, -5)
+mesh = ExtResource("10_x0yk3")
+
+[node name="Syntyscifi2SmBldCorridorSingleArch01" type="MeshInstance3D" parent="."]
+mesh = ExtResource("11_sehmg")
+
+[node name="Syntyscifi2SmBldCorridorSingleArch02" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+mesh = ExtResource("11_sehmg")
+
+[node name="Syntyscifi2SmBldWall01Alt" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10)
+mesh = ExtResource("12_6en2a")
+
+[node name="Syntyscifi2SmBldWall01Alt2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -10)
+mesh = ExtResource("12_6en2a")
+
+[node name="Syntyscifi2SmBldWall01Alt3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+mesh = ExtResource("12_6en2a")
+
+[node name="Syntyscifi2SmBldWall01Alt4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -5)
+mesh = ExtResource("12_6en2a")
+
+[node name="Syntyscifi2SmBldWall01Alt5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+mesh = ExtResource("12_6en2a")
+
+[node name="Syntyscifi2SmBldWall01Alt6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 15, 0, -5)
+mesh = ExtResource("12_6en2a")
+
+[node name="Syntyscifi2SmBldWall01Alt7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 15, 0, -10)
+mesh = ExtResource("12_6en2a")
+
+[node name="Syntyscifi2SmBldWall01Alt8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5, 0, -5)
+mesh = ExtResource("12_6en2a")
+
+[node name="Syntyscifi2SmBldWall01Alt9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, 0)
+mesh = ExtResource("12_6en2a")
+
+[node name="Syntyscifi2SmBldWallDoorframe02" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
+mesh = ExtResource("13_wcb7m")
+
+[node name="Syntyscifi2SmBldLift01" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 10, 0, -4)
+mesh = ExtResource("14_4lid8")
+
+[node name="Syntyscifi2SmBldFloor07" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
+mesh = ExtResource("15_odqoe")
+
+[node name="Ceiling" type="Node3D" parent="."]
+
+[node name="Syntyscifi2SmBldRoofExterior01" type="MeshInstance3D" parent="Ceiling"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -5)
+mesh = ExtResource("16_dylq1")
+skeleton = NodePath("../..")
+
+[node name="Syntyscifi2SmBldRoofExterior02" type="MeshInstance3D" parent="Ceiling"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10)
+mesh = ExtResource("16_dylq1")
+skeleton = NodePath("../..")
+
+[node name="Syntyscifi2SmBldRoofExterior03" type="MeshInstance3D" parent="Ceiling"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -10)
+mesh = ExtResource("16_dylq1")
+skeleton = NodePath("../..")
+
+[node name="Syntyscifi2SmBldRoofExterior04" type="MeshInstance3D" parent="Ceiling"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+mesh = ExtResource("16_dylq1")
+skeleton = NodePath("../..")
+
+[node name="Syntyscifi2SmBldRoofExterior05" type="MeshInstance3D" parent="Ceiling"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+mesh = ExtResource("16_dylq1")
+skeleton = NodePath("../..")
+
+[node name="Syntyscifi2SmBldBridgeCeiling01" type="MeshInstance3D" parent="Ceiling"]
+mesh = ExtResource("8_twwdx")
+skeleton = NodePath("../..")
+
+[node name="Syntyscifi2SmBldWallCornerPillar01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -9)
+mesh = ExtResource("17_xmiko")
+
+[node name="Syntyscifi2SmBldWallCornerPillar02" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 0, -9)
+mesh = ExtResource("17_xmiko")
+
+[node name="Syntyscifi2SmBldWallCornerPillarWide05" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, -5)
+mesh = ExtResource("18_gn4bn")
+
+[node name="Syntyscifi2SmBldWallCornerPillarWide06" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 10, 0, -5)
+mesh = ExtResource("18_gn4bn")

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://ce2frvpkl1vcm"]
+
+[ext_resource type="PackedScene" uid="uid://bff443gxt0oo0" path="res://scene/bridge.tscn" id="1_qmiah"]
+[ext_resource type="Script" path="res://scene/player.gd" id="2_ibrk2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4ibqg"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3i0kv"]
+
+[node name="Maintest" type="Node3D"]
+
+[node name="Bridge" parent="." instance=ExtResource("1_qmiah")]
+
+[node name="player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 2)
+script = ExtResource("2_ibrk2")
+
+[node name="collision" type="CollisionShape3D" parent="player"]
+shape = SubResource("CapsuleShape3D_4ibqg")
+
+[node name="mesh" type="MeshInstance3D" parent="player"]
+mesh = SubResource("CapsuleMesh_3i0kv")
+skeleton = NodePath("")
+
+[node name="camera" type="Camera3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.922414, 0)
+
+[node name="light" type="SpotLight3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.570841)
+spot_range = 15.0
+spot_angle = 75.0

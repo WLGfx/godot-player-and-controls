@@ -1,0 +1,1098 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://gqlixwkys10i"
+path="res://.godot/imported/syntyscifi2.gltf-dca8c80e37de074df42e3ae22a06ba59.scn"
+
+[deps]
+
+source_file="res://assets/SM_Bld_/syntyscifi2.gltf"
+dest_files=["res://.godot/imported/syntyscifi2.gltf-dca8c80e37de074df42e3ae22a06ba59.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=false
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=3
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"standard": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/SM_Bld_/materials/standard.tres"
+}
+},
+"meshes": {
+"syntyscifi2_SM_Bld_Bridge_Ceiling_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Ceiling_01.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Chair_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Chair_01.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Chair_Captain_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Chair_Captain_01.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Console_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Console_01.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Console_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Console_02.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Console_Corner_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Console_Corner_01.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Console_Corner_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Console_Corner_02.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Floor_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Floor_01.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Platform_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Platform_01.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Rear_Wall_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Rear_Wall_01.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Wall_Details_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Wall_Details_01.res"
+},
+"syntyscifi2_SM_Bld_Bridge_Walls_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Bridge_Walls_01.res"
+},
+"syntyscifi2_SM_Bld_Ceiling_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_01.res"
+},
+"syntyscifi2_SM_Bld_Ceiling_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_02.res"
+},
+"syntyscifi2_SM_Bld_Ceiling_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_03.res"
+},
+"syntyscifi2_SM_Bld_Ceiling_Pipe_Junction_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_Pipe_Junction_01.res"
+},
+"syntyscifi2_SM_Bld_Ceiling_Pipes_Straight_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_Pipes_Straight_01.res"
+},
+"syntyscifi2_SM_Bld_Ceiling_Pipes_Straight_Broken_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_Pipes_Straight_Broken_01.res"
+},
+"syntyscifi2_SM_Bld_Ceiling_Pipes_Turn_L_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_Pipes_Turn_L_01.res"
+},
+"syntyscifi2_SM_Bld_Ceiling_Pipes_Turn_R_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_Pipes_Turn_R_01.res"
+},
+"syntyscifi2_SM_Bld_Corridor_Double_Arch_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Corridor_Double_Arch_01.res"
+},
+"syntyscifi2_SM_Bld_Corridor_Double_Arch_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Corridor_Double_Arch_02.res"
+},
+"syntyscifi2_SM_Bld_Corridor_Single_Arch_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Corridor_Single_Arch_01.res"
+},
+"syntyscifi2_SM_Bld_Corridor_Single_Arch_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Corridor_Single_Arch_02.res"
+},
+"syntyscifi2_SM_Bld_Corridor_Single_Arch_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Corridor_Single_Arch_03.res"
+},
+"syntyscifi2_SM_Bld_Crew_Beds_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Crew_Beds_01.res"
+},
+"syntyscifi2_SM_Bld_Crew_Blank_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Crew_Blank_01.res"
+},
+"syntyscifi2_SM_Bld_Crew_Blank_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Crew_Blank_02.res"
+},
+"syntyscifi2_SM_Bld_Crew_Desk_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Crew_Desk_01.res"
+},
+"syntyscifi2_SM_Bld_Crew_Kitchen_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Crew_Kitchen_01.res"
+},
+"syntyscifi2_SM_Bld_Crew_Shower_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Crew_Shower_01.res"
+},
+"syntyscifi2_SM_Bld_Crew_Toilet_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Crew_Toilet_01.res"
+},
+"syntyscifi2_SM_Bld_Floor_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_01.res"
+},
+"syntyscifi2_SM_Bld_Floor_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_010.res"
+},
+"syntyscifi2_SM_Bld_Floor_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_011.res"
+},
+"syntyscifi2_SM_Bld_Floor_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_02.res"
+},
+"syntyscifi2_SM_Bld_Floor_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_03.res"
+},
+"syntyscifi2_SM_Bld_Floor_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_04.res"
+},
+"syntyscifi2_SM_Bld_Floor_05": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_05.res"
+},
+"syntyscifi2_SM_Bld_Floor_06": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_06.res"
+},
+"syntyscifi2_SM_Bld_Floor_07": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_07.res"
+},
+"syntyscifi2_SM_Bld_Floor_08": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_08.res"
+},
+"syntyscifi2_SM_Bld_Floor_09": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_09.res"
+},
+"syntyscifi2_SM_Bld_Floor_Large_Walkway_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Large_Walkway_02.res"
+},
+"syntyscifi2_SM_Bld_Floor_Large_Walkway_Endcap_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Large_Walkway_Endcap_01.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_01.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_02.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_03.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_04.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_05": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_05.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_06": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_06.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_07": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_07.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_08": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_08.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_Hand_Rail_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_Hand_Rail_01.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_Hand_Rail_End_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_Hand_Rail_End_01.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_Hatch_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_Hatch_01.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_Walkway_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_Walkway_02.res"
+},
+"syntyscifi2_SM_Bld_Floor_Small_Walkway_Endcap_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_Small_Walkway_Endcap_01.res"
+},
+"syntyscifi2_SM_Bld_HangerExteriorShip_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_HangerExteriorShip_01.res"
+},
+"syntyscifi2_SM_Bld_HangerExteriorShip_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_HangerExteriorShip_02.res"
+},
+"syntyscifi2_SM_Bld_HangerPlatform_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_HangerPlatform_01.res"
+},
+"syntyscifi2_SM_Bld_Hanger_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Hanger_01.res"
+},
+"syntyscifi2_SM_Bld_House_Interior_Floor_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_House_Interior_Floor_01.res"
+},
+"syntyscifi2_SM_Bld_Hydroponics_BaseFloor_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Hydroponics_BaseFloor_01.res"
+},
+"syntyscifi2_SM_Bld_Hydroponics_Roof_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Hydroponics_Roof_01.res"
+},
+"syntyscifi2_SM_Bld_Hydroponics_UpperFloor_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Hydroponics_UpperFloor_01.res"
+},
+"syntyscifi2_SM_Bld_Landing_Platform_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Landing_Platform_01.res"
+},
+"syntyscifi2_SM_Bld_Lift_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Lift_01.res"
+},
+"syntyscifi2_SM_Bld_Lift_Wall_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Lift_Wall_01.res"
+},
+"syntyscifi2_SM_Bld_Roof_Exterior_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Roof_Exterior_01.res"
+},
+"syntyscifi2_SM_Bld_Roof_Exterior_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Roof_Exterior_02.res"
+},
+"syntyscifi2_SM_Bld_Roof_Exterior_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Roof_Exterior_03.res"
+},
+"syntyscifi2_SM_Bld_Wall_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_01_Alt": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_01_Alt.res"
+},
+"syntyscifi2_SM_Bld_Wall_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_02.res"
+},
+"syntyscifi2_SM_Bld_Wall_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_03.res"
+},
+"syntyscifi2_SM_Bld_Wall_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_04.res"
+},
+"syntyscifi2_SM_Bld_Wall_04_Alt": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_04_Alt.res"
+},
+"syntyscifi2_SM_Bld_Wall_05": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_05.res"
+},
+"syntyscifi2_SM_Bld_Wall_06": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_06.res"
+},
+"syntyscifi2_SM_Bld_Wall_Corner_Pillar_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Corner_Pillar_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_02.res"
+},
+"syntyscifi2_SM_Bld_Wall_Corner_Pillar_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_03.res"
+},
+"syntyscifi2_SM_Bld_Wall_Corner_Pillar_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_04.res"
+},
+"syntyscifi2_SM_Bld_Wall_Corner_Pillar_05": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_05.res"
+},
+"syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_02.res"
+},
+"syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_03.res"
+},
+"syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_04.res"
+},
+"syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_05": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Corner_Pillar_Wide_05.res"
+},
+"syntyscifi2_SM_Bld_Wall_Doorframe_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Doorframe_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Doorframe_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Doorframe_02.res"
+},
+"syntyscifi2_SM_Bld_Wall_Doorframe_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Doorframe_03.res"
+},
+"syntyscifi2_SM_Bld_Wall_Doorframe_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Doorframe_04.res"
+},
+"syntyscifi2_SM_Bld_Wall_Doorframe_05": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Doorframe_05.res"
+},
+"syntyscifi2_SM_Bld_Wall_Doorframe_06": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Doorframe_06.res"
+},
+"syntyscifi2_SM_Bld_Wall_Doorframe_Outer_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Doorframe_Outer_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Doorframe_Outer_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Doorframe_Outer_02.res"
+},
+"syntyscifi2_SM_Bld_Wall_EscPod_Hatch_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_EscPod_Hatch_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Exterior_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Exterior_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Exterior_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Exterior_02.res"
+},
+"syntyscifi2_SM_Bld_Wall_Exterior_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Exterior_03.res"
+},
+"syntyscifi2_SM_Bld_Wall_Exterior_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Exterior_04.res"
+},
+"syntyscifi2_SM_Bld_Wall_Exterior_Pillar_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Exterior_Pillar_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Exterior_Window_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Exterior_Window_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Exterior_Window_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Exterior_Window_02.res"
+},
+"syntyscifi2_SM_Bld_Wall_Mechanical_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Mechanical_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Mechanical_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Mechanical_02.res"
+},
+"syntyscifi2_SM_Bld_Wall_Pillar_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Pillar_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Pillar_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Pillar_02.res"
+},
+"syntyscifi2_SM_Bld_Wall_Pillar_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Pillar_03.res"
+},
+"syntyscifi2_SM_Bld_Wall_Pillar_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Pillar_04.res"
+},
+"syntyscifi2_SM_Bld_Wall_Pillar_05": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Pillar_05.res"
+},
+"syntyscifi2_SM_Bld_Wall_Pillar_06": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Pillar_06.res"
+},
+"syntyscifi2_SM_Bld_Wall_Pillar_07": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Pillar_07.res"
+},
+"syntyscifi2_SM_Bld_Wall_Pods_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Pods_01.res"
+},
+"syntyscifi2_SM_Bld_Wall_Tube_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Tube_01.res"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

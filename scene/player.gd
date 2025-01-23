@@ -2,16 +2,7 @@
 extends CharacterBody3D
 
 @onready var camera: Camera3D = $camera
-#@onready var player: CharacterBody3D = $"."
 @onready var wand:= $light
-
-#@onready var mouse_speed_sl: HSlider = $"Control/player ui/ui controls/slider/mouse speed_sl"
-#@onready var mouse_speed_le: LineEdit = $"Control/player ui/ui controls/mouse sensitivity/mouse speed_le"
-#@onready var camera_rotate_x: LineEdit = $"Control/player ui/ui controls/camera x/camera rotate x"
-
-#@onready var player_ui: VBoxContainer = $"Control/player ui"
-#@onready var mouse_controls: Button = $"Control/player ui/mouse controls"
-#@onready var ui_controls: VBoxContainer = $"Control/player ui/ui controls"
 
 # globals for mouse control
 @export var mouse_sensitivity = 0.004
@@ -30,8 +21,6 @@ extends CharacterBody3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#mouse_speed_le.text = str(mouse_sensitivity)
-	#ui_controls.visible = false
 	pass
 
 

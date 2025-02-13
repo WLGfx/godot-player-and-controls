@@ -1,41 +1,35 @@
-[gd_scene load_steps=6 format=3 uid="uid://b27k5nbtwh3rw"]
+[gd_scene load_steps=5 format=3 uid="uid://b27k5nbtwh3rw"]
 
 [ext_resource type="ArrayMesh" uid="uid://dg3vqi1wqxv5h" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Corridor_Single_Arch_01.res" id="1_fr6l5"]
 [ext_resource type="ArrayMesh" uid="uid://mr5i5hur0r6c" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_06.res" id="2_pdo8x"]
 [ext_resource type="ArrayMesh" uid="uid://d2cly17qbhlgf" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Exterior_04.res" id="3_trtpa"]
 [ext_resource type="ArrayMesh" uid="uid://dpsodduxhrqjf" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_03.res" id="4_oqyxb"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_83m0f"]
-
 [node name="corridor-1l" type="Node3D"]
 
-[node name="mesh_instance_3d" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("CapsuleMesh_83m0f")
-
 [node name="syntyscifi_2_sm_bld_corridor_single_arch_02" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 0, 0)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 mesh = ExtResource("1_fr6l5")
 
 [node name="syntyscifi_2_sm_bld_floor_06" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
 mesh = ExtResource("2_pdo8x")
 skeleton = NodePath("")
 
 [node name="syntyscifi_2_sm_bld_wall_exterior_04" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -2.5, 0, -5.23654)
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, -5)
 mesh = ExtResource("3_trtpa")
 
 [node name="syntyscifi_2_sm_bld_wall_exterior_09" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.7, 0, -5)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5, 0, -5)
 mesh = ExtResource("3_trtpa")
 
 [node name="syntyscifi_2_sm_bld_ceiling_03" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -2.5, -0.5, -5.03654)
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, -0.5, -5)
 mesh = ExtResource("4_oqyxb")
 skeleton = NodePath("../syntyscifi_2_sm_bld_wall_exterior_04")
 
 [node name="light-01" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 2.75282, -2.53654)
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 2.49998, 3.35282, -2.55005)
 omni_range = 12.0
 omni_attenuation = 0.2

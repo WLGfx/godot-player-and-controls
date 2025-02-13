@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://caxr0a3a05odl"]
+[gd_scene load_steps=6 format=3 uid="uid://caxr0a3a05odl"]
 
 [ext_resource type="ArrayMesh" uid="uid://dg3vqi1wqxv5h" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Corridor_Single_Arch_01.res" id="1_dboof"]
 [ext_resource type="ArrayMesh" uid="uid://mr5i5hur0r6c" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_06.res" id="2_gq4qg"]
@@ -6,30 +6,24 @@
 [ext_resource type="ArrayMesh" uid="uid://di2kypk7oeoqr" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_01.res" id="4_h26o5"]
 [ext_resource type="ArrayMesh" uid="uid://dpsodduxhrqjf" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_03.res" id="5_cooyv"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_k4b8c"]
-
 [node name="corridor-31" type="Node3D"]
-
-[node name="mesh_instance_3d" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("CapsuleMesh_k4b8c")
 
 [node name="syntyscifi_2_sm_bld_corridor_single_arch_02" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -15)
 mesh = ExtResource("1_dboof")
 
 [node name="syntyscifi_2_sm_bld_floor_06" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -5.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -5)
 mesh = ExtResource("2_gq4qg")
 skeleton = NodePath("")
 
 [node name="syntyscifi_2_sm_bld_floor_07" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -10.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -10)
 mesh = ExtResource("2_gq4qg")
 skeleton = NodePath("")
 
 [node name="syntyscifi_2_sm_bld_floor_08" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -15.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -15)
 mesh = ExtResource("2_gq4qg")
 skeleton = NodePath("")
 

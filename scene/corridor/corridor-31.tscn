@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=3 uid="uid://caxr0a3a05odl"]
+
+[ext_resource type="ArrayMesh" uid="uid://dg3vqi1wqxv5h" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Corridor_Single_Arch_01.res" id="1_dboof"]
+[ext_resource type="ArrayMesh" uid="uid://mr5i5hur0r6c" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Floor_06.res" id="2_gq4qg"]
+[ext_resource type="ArrayMesh" uid="uid://d2cly17qbhlgf" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Wall_Exterior_04.res" id="3_houpd"]
+[ext_resource type="ArrayMesh" uid="uid://di2kypk7oeoqr" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_01.res" id="4_h26o5"]
+[ext_resource type="ArrayMesh" uid="uid://dpsodduxhrqjf" path="res://assets/SM_Bld_/meshes/syntyscifi2_SM_Bld_Ceiling_03.res" id="5_cooyv"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_k4b8c"]
+
+[node name="corridor-31" type="Node3D"]
+
+[node name="mesh_instance_3d" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_k4b8c")
+
+[node name="syntyscifi_2_sm_bld_corridor_single_arch_02" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -15)
+mesh = ExtResource("1_dboof")
+
+[node name="syntyscifi_2_sm_bld_floor_06" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -5.1)
+mesh = ExtResource("2_gq4qg")
+skeleton = NodePath("")
+
+[node name="syntyscifi_2_sm_bld_floor_07" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -10.1)
+mesh = ExtResource("2_gq4qg")
+skeleton = NodePath("")
+
+[node name="syntyscifi_2_sm_bld_floor_08" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -15.1)
+mesh = ExtResource("2_gq4qg")
+skeleton = NodePath("")
+
+[node name="syntyscifi_2_sm_bld_wall_exterior_04" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 0, 0)
+mesh = ExtResource("3_houpd")
+
+[node name="syntyscifi_2_sm_bld_wall_exterior_05" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 0, -5)
+mesh = ExtResource("3_houpd")
+
+[node name="syntyscifi_2_sm_bld_wall_exterior_06" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 0, -10)
+mesh = ExtResource("3_houpd")
+
+[node name="syntyscifi_2_sm_bld_wall_exterior_07" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.5, 0, -15)
+mesh = ExtResource("3_houpd")
+
+[node name="syntyscifi_2_sm_bld_wall_exterior_08" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.5, 0, -10)
+mesh = ExtResource("3_houpd")
+
+[node name="syntyscifi_2_sm_bld_wall_exterior_09" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.5, 0, -5)
+mesh = ExtResource("3_houpd")
+
+[node name="syntyscifi_2_sm_bld_ceiling_01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.5, -5)
+mesh = ExtResource("4_h26o5")
+
+[node name="syntyscifi_2_sm_bld_ceiling_04" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.5, -15)
+mesh = ExtResource("4_h26o5")
+
+[node name="syntyscifi_2_sm_bld_ceiling_03" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.5, -10)
+mesh = ExtResource("5_cooyv")
+
+[node name="light-01" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.25282, -8)
+omni_range = 12.0
+omni_attenuation = 0.2

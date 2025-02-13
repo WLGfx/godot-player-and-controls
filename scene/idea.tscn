@@ -1,4 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://cevvxo4u5d7w5"]
+[gd_scene load_steps=8 format=3 uid="uid://cevvxo4u5d7w5"]
+
+[ext_resource type="Script" path="res://scene/Idea.cs" id="1_rmkh8"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_amn1n"]
 flip_faces = true
@@ -33,6 +35,7 @@ _data = {
 point_count = 2
 
 [node name="Idea" type="Node3D"]
+script = ExtResource("1_rmkh8")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_amn1n")

@@ -271,7 +271,7 @@ mesh = ExtResource("29_n1a7t")
 skeleton = NodePath("../..")
 
 [node name="Syntyscifi2SmBldWallEscPodHatch01" type="MeshInstance3D" parent="Wall"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -14)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.97964, 0, -14)
 mesh = ExtResource("30_bd5pl")
 skeleton = NodePath("../..")
 
